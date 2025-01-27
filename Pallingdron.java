@@ -6,7 +6,7 @@ public class Pallingdron{
         Scanner in = new Scanner(System.in);
         String str1="", str2="";
         System.out.println("Enter your String or Number:");
-        str1=in.nextLine();
+        str1=in.nextLine().toLowerCase();
 
         int strLength = str1.length();
         for (int i = (strLength - 1); i >=0; --i) {
