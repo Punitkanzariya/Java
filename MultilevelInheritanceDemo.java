@@ -2,32 +2,32 @@
 //  multilevel inheritance. 
 
  // Parent class
-class Animal {
-    void eat() {
-        System.out.println("This animal eats food.");
+class A {
+    void hy() {
+        System.out.println("Hy from A.");
     }
 }
 
 // Child class inheriting from Animal
-class Mammal extends Animal {
-    void walk() {
-        System.out.println("This mammal walks on legs.");
+class B extends A {
+    void hello() {
+        System.out.println("Hello from B.");
     }
 }
 
 // Grandchild class inheriting from Mammal
-class Dog extends Mammal {
-    void bark() {
-        System.out.println("The dog barks.");
+class C extends B {
+    void hello2() {
+        System.out.println("Hello from c.");
     }
 }
 
 // Main class to demonstrate multilevel inheritance
 public class MultilevelInheritanceDemo {
     public static void main(String[] args) {
-        Dog myDog = new Dog();
-        myDog.eat();  // Inherited from Animal
-        myDog.walk(); // Inherited from Mammal
-        myDog.bark(); // Defined in Dog
+        C o = new C();
+        o.hy();  // Inherited from Animal
+        o.hello(); // Inherited from Mammal
+        o.hello2(); // Defined in Dog
     }
 }
