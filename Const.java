@@ -17,7 +17,7 @@ class volume{
         System.out.println("Volume of rectangle:"+l*w*h);
     }
     public void volumeofCirlce(){
-        System.out.println("Volume of rectangle:"+s*s*s);
+        System.out.println("Volume of circle:"+s*s*s);
     }
 }
 public class Const{
